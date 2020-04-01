@@ -7,8 +7,9 @@ var logger = require('morgan');
 var usersRouter = require('./routes/users');
 
 var mongoose = require('mongoose');
+var config = require('./config');
 
-var connect = mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/shopfromcloud', {
+var connect = mongoose.connect(process.env.MONGODB_URI || config.mongoUrl, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
