@@ -4,13 +4,11 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var mongoose = require('mongoose');
-var config = require('./config');
 
-var connect = mongoose.connect(process.env.MONGODB_URI || config.mongoUrl, {
+var connect = mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/shopfromcloud', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
