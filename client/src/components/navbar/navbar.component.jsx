@@ -4,7 +4,6 @@ import './navbar.styles.scss';
 import {NavLink} from 'react-router-dom';
 import CartIcon from '../cart-icon/cart-icon.component';
 import {ReactComponent as Logo} from '../../assets/crown.svg';
-import {ReactComponent as Account} from '../../assets/account.svg';
 
 class Navbar extends Component {
     render() {

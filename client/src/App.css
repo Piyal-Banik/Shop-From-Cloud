@@ -1,11 +1,15 @@
 body {
   font-family: 'Open Sans Condensed';
-  padding: 20px 0;
 }
 
 a{
   text-decoration: none;
   color: black;
+}
+
+.content {
+  height: 40vh;
+  background-color: green;
 }
 
 *{

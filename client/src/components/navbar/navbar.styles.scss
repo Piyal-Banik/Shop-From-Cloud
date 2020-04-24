@@ -6,8 +6,10 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  top: 0;
   font-size: 18px;
   background-color: white;
+  z-index: 100;
 
   .logo-container {
     width: 30%;
